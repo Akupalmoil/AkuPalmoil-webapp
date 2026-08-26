@@ -8,14 +8,14 @@ const PRODUCTS = [
     name: "AKU Palm Oil",
     size: "75cl",
     price: 2000,
-    image: "5FF6924E-8FF0-4184-97F5-38931B2B46DA.png"
+    image: "15576FB6-156F-45C5-89E8-86CD2FB48763.png"
   },
   {
     id: "1l",
     name: "AKU Palm Oil",
     size: "1 Litre",
     price: 2900,
-    image: "15576FB6-156F-45C5-89E8-86CD2FB48763.png"
+    image: "5FF6924E-8FF0-4184-97F5-38931B2B46DA.png"
   },
   {
     id: "5l",
