@@ -771,3 +771,214 @@ svg {
     bottom: 8px;
   }
 }
+
+/* =========================================================
+   FINAL MOBILE WIDTH FIX
+   ========================================================= */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Keep every major section inside the phone */
+.site-header,
+.announcement,
+.hero,
+.shop-section,
+.story,
+.bulk-cta,
+footer {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+  .site-header {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: hidden;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(48px, 14vw, 70px);
+    letter-spacing: -3px;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    overflow-wrap: break-word;
+  }
+
+  .hero-actions {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .trust-row {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* SHOP */
+  .shop-section {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: hidden;
+  }
+
+  .section-top {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section-top h2,
+  .section-top p {
+    max-width: 100%;
+  }
+
+  /* CATEGORY BUTTONS */
+  .category-pills {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .pill {
+    min-width: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /* PRODUCT GRID */
+  .product-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* PRODUCT CARD */
+  .product-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  /* THIS WAS TOO LARGE BEFORE */
+  .product-image {
+    width: 100%;
+    height: 300px;
+    padding: 18px;
+    overflow: hidden;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .product-info {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .product-info h3 {
+    max-width: 100%;
+    font-size: 26px;
+  }
+
+  .product-info p {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .product-bottom {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .product-bottom strong {
+    white-space: nowrap;
+  }
+
+  .add-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  /* BULK SECTION */
+  .bulk-cta {
+    width: calc(100% - 32px);
+    max-width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 28px 20px;
+    overflow: hidden;
+  }
+
+  /* STORY */
+  .story {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+  }
+
+  .story-inner {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* MOBILE NAV */
+  .mobile-nav {
+    left: 10px;
+    right: 10px;
+    width: auto;
+    max-width: none;
+  }
+}
