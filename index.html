@@ -2,14 +2,723 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#10100F">
-  <meta name="description" content="AKU Palm Oil — Pure Heritage Palm Oil.">
-  <title>AKU Palm Oil</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <meta
+    name="theme-color"
+    content="#073f2d"
+  >
+
+  <title>AKU Palm Oil — Pure Heritage Palm Oil</title>
+
+  <meta
+    name="description"
+    content="Shop AKU Palm Oil — premium Nigerian palm oil for homes, restaurants and businesses."
+  >
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div id="app"></div>
+
+  <!-- =========================
+       ANNOUNCEMENT
+  ========================== -->
+
+  <div class="announcement">
+    AKU PALM OIL · PURE HERITAGE · NATURAL · TRUSTED
+  </div>
+
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="site-header">
+
+    <a href="#home" class="brand" aria-label="AKU Palm Oil home">
+      <span class="brand-aku">AKU</span>
+      <span class="brand-palm">PALM OIL</span>
+    </a>
+
+    <div class="header-actions">
+
+      <!-- Search -->
+      <button
+        class="icon-button"
+        id="searchBtn"
+        type="button"
+        aria-label="Search"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.5"></circle>
+          <path d="M16 16l5 5"></path>
+        </svg>
+      </button>
+
+      <!-- Cart -->
+      <button
+        class="icon-button cart-button"
+        id="cartBtn"
+        type="button"
+        aria-label="Shopping cart"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H6"></path>
+          <circle cx="10" cy="19" r="1.4"></circle>
+          <circle cx="18" cy="19" r="1.4"></circle>
+        </svg>
+
+        <span id="cartCount" class="cart-count">0</span>
+      </button>
+
+      <!-- Order -->
+      <a
+        class="header-order"
+        href="https://wa.me/2347062103875?text=Hello%20AKU%20Palm%20Oil%2C%20I%20would%20like%20to%20place%20an%20order."
+        target="_blank"
+        rel="noopener"
+      >
+        Order Now
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       SEARCH
+  ========================== -->
+
+  <div class="search-panel" id="searchPanel">
+
+    <div class="search-inner">
+
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="6.5"></circle>
+        <path d="M16 16l5 5"></path>
+      </svg>
+
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Search AKU Palm Oil..."
+        autocomplete="off"
+      >
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+
+  <main id="home">
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          PURE HERITAGE PALM OIL
+        </span>
+
+        <h1>
+          Rich taste.
+          <br>
+          <span>Real tradition.</span>
+        </h1>
+
+        <p class="hero-description">
+          Premium palm oil made for Nigerian homes,
+          restaurants and kitchens that care about
+          authentic taste.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#products" class="primary-button">
+            Shop AKU
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h13"></path>
+              <path d="M13 6l6 6-6 6"></path>
+            </svg>
+          </a>
+
+          <a
+            href="https://wa.me/2347062103875?text=Hello%20AKU%20Palm%20Oil%2C%20I%20would%20like%20to%20place%20an%20order."
+            target="_blank"
+            rel="noopener"
+            class="secondary-button"
+          >
+            Order on WhatsApp
+          </a>
+
+        </div>
+
+        <div class="trust-grid">
+
+          <div>
+            <strong>01</strong>
+            <span>Authentic taste</span>
+          </div>
+
+          <div>
+            <strong>02</strong>
+            <span>Carefully processed</span>
+          </div>
+
+          <div>
+            <strong>03</strong>
+            <span>Made for every kitchen</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         COLLECTION HEADER
+    ========================== -->
+
+    <section class="collection-header">
+
+      <div>
+
+        <span class="eyebrow">
+          THE AKU COLLECTION
+        </span>
+
+        <h2>
+          Choose your size.
+        </h2>
+
+        <p>
+          From everyday cooking to bulk supply,
+          choose the AKU size that works for you.
+        </p>
+
+      </div>
+
+      <div class="category-pills">
+
+        <button
+          class="pill active"
+          data-filter="all"
+          type="button"
+        >
+          All
+        </button>
+
+        <button
+          class="pill"
+          data-filter="everyday"
+          type="button"
+        >
+          Everyday
+        </button>
+
+        <button
+          class="pill"
+          data-filter="family"
+          type="button"
+        >
+          Family
+        </button>
+
+        <button
+          class="pill"
+          data-filter="bulk"
+          type="button"
+        >
+          Bulk
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRODUCTS
+    ========================== -->
+
+    <section
+      class="products-section"
+      id="products"
+    >
+
+      <div class="product-grid">
+
+
+        <!-- 75 CL -->
+
+        <article
+          class="product-card"
+          data-category="everyday"
+        >
+
+          <div class="product-image">
+
+            <span class="product-badge new-badge">
+              NEW
+            </span>
+
+            <img
+              src="15576FB6-156F-4505-89E8-86CD2FB48763.png"
+              alt="AKU Palm Oil 75 CL"
+            >
+
+          </div>
+
+          <div class="product-info">
+
+            <span class="product-size">
+              75 CL
+            </span>
+
+            <h3>
+              AKU Palm Oil
+            </h3>
+
+            <p>
+              Convenient size for everyday meals.
+            </p>
+
+            <div class="product-bottom">
+
+              <strong>
+                ₦2,000
+              </strong>
+
+              <button
+                class="add-button"
+                type="button"
+                data-id="aku-75cl"
+                data-name="AKU Palm Oil"
+                data-size="75 CL"
+                data-price="2000"
+                data-image="15576FB6-156F-4505-89E8-86CD2FB48763.png"
+              >
+                Add to cart
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 5v14"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- 1 LITRE -->
+
+        <article
+          class="product-card"
+          data-category="everyday"
+        >
+
+          <div class="product-image">
+
+            <span class="product-badge">
+              EVERYDAY
+            </span>
+
+            <img
+              src="5FF6924E-8FF0-4184-97F5-38931B2B46DA.png"
+              alt="AKU Palm Oil 1 Litre"
+            >
+
+          </div>
+
+          <div class="product-info">
+
+            <span class="product-size">
+              1 LITRE
+            </span>
+
+            <h3>
+              AKU Palm Oil
+            </h3>
+
+            <p>
+              Perfect for everyday Nigerian cooking.
+            </p>
+
+            <div class="product-bottom">
+
+              <strong>
+                ₦2,900
+              </strong>
+
+              <button
+                class="add-button"
+                type="button"
+                data-id="aku-1l"
+                data-name="AKU Palm Oil"
+                data-size="1 Litre"
+                data-price="2900"
+                data-image="5FF6924E-8FF0-4184-97F5-38931B2B46DA.png"
+              >
+                Add to cart
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 5v14"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- 5 LITRES -->
+
+        <article
+          class="product-card featured-card"
+          data-category="family"
+        >
+
+          <div class="product-image">
+
+            <span class="product-badge bestseller-badge">
+              BEST SELLER
+            </span>
+
+            <img
+              src="05048BC9-559B-45CC-90D1-89576104A9A2.png"
+              alt="AKU Palm Oil 5 Litres"
+            >
+
+          </div>
+
+          <div class="product-info">
+
+            <span class="product-size">
+              5 LITRES
+            </span>
+
+            <h3>
+              AKU Palm Oil
+            </h3>
+
+            <p>
+              The ideal family and everyday supply size.
+            </p>
+
+            <div class="product-bottom">
+
+              <strong>
+                ₦15,500
+              </strong>
+
+              <button
+                class="add-button"
+                type="button"
+                data-id="aku-5l"
+                data-name="AKU Palm Oil"
+                data-size="5 Litres"
+                data-price="15500"
+                data-image="05048BC9-559B-45CC-90D1-89576104A9A2.png"
+              >
+                Add to cart
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 5v14"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- 25 LITRES -->
+
+        <article
+          class="product-card"
+          data-category="bulk"
+        >
+
+          <div class="product-image">
+
+            <span class="product-badge bulk-badge">
+              BULK SUPPLY
+            </span>
+
+            <img
+              src="D72F9DAE-C44A-49A8-9386-DE6A245B2FF1.png"
+              alt="AKU Palm Oil 25 Litres"
+            >
+
+          </div>
+
+          <div class="product-info">
+
+            <span class="product-size">
+              25 LITRES
+            </span>
+
+            <h3>
+              AKU Palm Oil
+            </h3>
+
+            <p>
+              Built for restaurants, caterers and serious household supply.
+            </p>
+
+            <div class="product-bottom">
+
+              <strong>
+                ₦58,000
+              </strong>
+
+              <button
+                class="add-button"
+                type="button"
+                data-id="aku-25l"
+                data-name="AKU Palm Oil"
+                data-size="25 Litres"
+                data-price="58000"
+                data-image="D72F9DAE-C44A-49A8-9386-DE6A245B2FF1.png"
+              >
+                Add to cart
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 5v14"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         BULK SECTION
+    ========================== -->
+
+    <section class="bulk-section">
+
+      <div>
+
+        <span class="eyebrow">
+          FOR FAMILIES & BUSINESSES
+        </span>
+
+        <h2>
+          Buying in quantity?
+        </h2>
+
+        <p>
+          Restaurants, retailers, caterers, events
+          and larger orders can talk directly with
+          the AKU team.
+        </p>
+
+      </div>
+
+      <a
+        href="https://wa.me/2347062103875?text=Hello%20AKU%20Palm%20Oil%2C%20I%20am%20interested%20in%20a%20bulk%20order."
+        target="_blank"
+        rel="noopener"
+        class="primary-button"
+      >
+        Bulk orders
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12h13"></path>
+          <path d="M13 6l6 6-6 6"></path>
+        </svg>
+      </a>
+
+    </section>
+
+
+    <!-- =========================
+         STORY
+    ========================== -->
+
+    <section class="story-section">
+
+      <div class="story-content">
+
+        <span class="eyebrow">
+          THE AKU STANDARD
+        </span>
+
+        <h2>
+          Tradition,
+          <span>made modern.</span>
+        </h2>
+
+        <p>
+          AKU Palm Oil brings the richness of traditional
+          Nigerian palm oil together with a clean,
+          modern shopping experience designed for
+          today's homes, restaurants and businesses.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="contact-section">
+
+      <span class="eyebrow">
+        READY TO ORDER?
+      </span>
+
+      <h2>
+        Bring AKU<br>
+        into your kitchen.
+      </h2>
+
+      <a
+        href="https://wa.me/2347062103875?text=Hello%20AKU%20Palm%20Oil%2C%20I%20would%20like%20to%20place%20an%20order."
+        target="_blank"
+        rel="noopener"
+        class="primary-button"
+      >
+        Order on WhatsApp
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12h13"></path>
+          <path d="M13 6l6 6-6 6"></path>
+        </svg>
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       CART OVERLAY
+  ========================== -->
+
+  <div
+    class="cart-overlay"
+    id="cartOverlay"
+  ></div>
+
+
+  <!-- =========================
+       CART DRAWER
+  ========================== -->
+
+  <aside
+    class="cart-drawer"
+    id="cartDrawer"
+    aria-label="Shopping cart"
+  >
+
+    <div class="cart-header">
+
+      <div>
+
+        <span class="eyebrow">
+          YOUR AKU ORDER
+        </span>
+
+        <h2>
+          Shopping cart
+        </h2>
+
+      </div>
+
+      <button
+        class="close-button"
+        id="closeCart"
+        type="button"
+        aria-label="Close cart"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6l12 12"></path>
+          <path d="M18 6L6 18"></path>
+        </svg>
+      </button>
+
+    </div>
+
+
+    <div
+      class="cart-items"
+      id="cartItems"
+    ></div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-total-row">
+
+        <span>
+          Total
+        </span>
+
+        <strong id="cartTotal">
+          ₦0
+        </strong>
+
+      </div>
+
+      <button
+        class="checkout-button"
+        id="checkoutBtn"
+        type="button"
+      >
+        Continue on WhatsApp
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12h13"></path>
+          <path d="M13 6l6 6-6 6"></path>
+        </svg>
+      </button>
+
+    </div>
+
+  </aside>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
